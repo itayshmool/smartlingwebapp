@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes
+        autoGenerate="true">
+
+
+
+
+    <datastore-index kind="updateEntry" ancestor="false">
+        <property name="projectId" direction="asc" />
+        <property name="locale" direction="asc" />
+        <property name="fileUri" direction="desc" />
+    </datastore-index>
+
+    <datastore-index kind="updateEntry" ancestor="false">
+        <property name="projectId" direction="asc" />
+        <property name="locale" direction="asc" />
+        <property name="fileUri" direction="desc" />
+        <property name="key" direction="desc" />
+    </datastore-index>
+
+
+
+</datastore-indexes>
+
