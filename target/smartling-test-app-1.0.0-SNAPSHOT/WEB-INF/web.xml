@@ -14,6 +14,43 @@
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>smartling</servlet-name>
+        <servlet-class>servlets.SmartlingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>smartling</servlet-name>
+        <url-pattern>/smartling</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+    <servlet-name>updatekey</servlet-name>
+    <servlet-class>servlets.SmartlingUpdateKeyServlet</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>updatekey</servlet-name>
+        <url-pattern>/updatekey</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updatekeybysinglelocale</servlet-name>
+        <servlet-class>servlets.SmartlingUpdateKeyByProjectIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updatekeybysinglelocale</servlet-name>
+        <url-pattern>/updatekeybysinglelocale</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>smartlingmerged</servlet-name>
+        <servlet-class>servlets.SmartlingGetMergedFullServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>smartlingmerged</servlet-name>
+        <url-pattern>/smartlingmerged</url-pattern>
+    </servlet-mapping>
 
 
     <welcome-file-list>

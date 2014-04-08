@@ -169,7 +169,9 @@ public class SmartlingGetMergedServlet extends HttpServlet {
 
 
 
-            String currentValInLocaleFile = (String) smartlingFile.get(keyInDb);
+           //String currentValInLocaleFile = (String) smartlingFile.get(keyInDb);
+            String currentValInLocaleFile = "new orgenize images";
+
 
             if (currentValInLocaleFile == null || currentValInLocaleFile.isEmpty()) {
 

@@ -98,11 +98,43 @@ public class SmartlingKeyEntry {
 
     }
 
+    public SmartlingKeyEntry(String projectId,  String key , String engVal, String updateval, String fileUri,String apiKey) {
+
+        this.projectId = projectId;
+        this.key = key;
+        this.updatedEngVal = updateval;
+        this.engVal = engVal;
+        this.fileUri = fileUri;
+        this.apiKey = apiKey;
+
+    }
+
+    public SmartlingKeyEntry(String projectId,  String key , String engVal, String updateval, String fileUri,String apiKey,String locale) {
+
+        this.projectId = projectId;
+        this.key = key;
+        this.updatedEngVal = updateval;
+        this.engVal = engVal;
+        this.fileUri = fileUri;
+        this.apiKey = apiKey;
+        this.locale =  locale;
+
+    }
+
     // This C-tor is being used just for pulling file from smartling
     public SmartlingKeyEntry(String projectId, String locale, String fileUri) {
         this.projectId = projectId;
         this.fileUri = fileUri;
         this.locale = locale;
+
+    }
+
+    // This C-tor is being used just for pulling file from smartling
+    public SmartlingKeyEntry(String projectId, String locale, String fileUri,String apiKey) {
+        this.projectId = projectId;
+        this.fileUri = fileUri;
+        this.locale = locale;
+        this.apiKey = apiKey;
 
     }
 

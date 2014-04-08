@@ -35,6 +35,31 @@ public class SmartlingRequestApi {
 
 
 
+    public static String getFileFromSmartling(String fileUri , String projectId , String locale , String apiKey) throws IOException {
+
+
+        String request = SMARTLING_GET_FILE_URL + "?";
+        request +=  "apiKey=" + apiKey;
+        request +=  "&fileUri=" + fileUri;
+        request +=  "&projectId=" + projectId;
+        if (!locale.equalsIgnoreCase("en"))
+            request +=  "&locale=" + locale;
+
+
+        //apiKey=d7cc5b45-072d-4182-be6f-e8105275368a&fileUri=/files/messages_en.json&projectId=7241ba9c9&locale=es" "https://api.smartling.com/v1/file/get"
+
+
+
+        HttpURLConnection connection = prepareConnection(request, "GET");
+
+
+        String resp = openConnection(connection);
+
+        return resp;
+
+
+    }
+
 
     public static String getFileFromSmartling(String fileUri , String projectId , String locale) throws IOException {
 

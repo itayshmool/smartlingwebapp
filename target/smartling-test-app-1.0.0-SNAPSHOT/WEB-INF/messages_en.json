@@ -2,6 +2,6 @@
     "smartling":{"translate_mode":"all","source_key_paths":["/{*}"],"variants_enabled":true},
     "header": "smartling test application value number 2",
     "key1": "this is key 1 - version 2",
-    "key2": "this is key 2",
-    "key3": "this is key 3"
+    "key2": "key2 alon",
+    "key3": "key2 alon"
 }

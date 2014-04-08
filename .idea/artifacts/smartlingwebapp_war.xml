@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="smartlingwebapp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="smartling-test-app-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="smartlingwebapp:war exploded" />
+    </root>
+  </artifact>
+</component>
